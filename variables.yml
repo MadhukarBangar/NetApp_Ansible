@@ -45,4 +45,11 @@ lun_size: 100
 cifs_vol: cifs_vol
 share_name: win_share
 
-# Variables for snapmirror
+# List of volumes
+list_vol:
+  - sales
+  - finance
+  - it
+  - hr
+  - marketing
+  - app
