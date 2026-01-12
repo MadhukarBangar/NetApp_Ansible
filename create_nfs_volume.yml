@@ -26,6 +26,8 @@
       wait_for_completion: true
       junction_path: "{{ '/' + vol_name }}"
       <<: *login
+        loop:
+          "{{list_vol}}"
   - name: Create ExportPolicyRule
     na_ontap_export_policy_rule:
      state: present
